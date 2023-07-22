@@ -23,6 +23,17 @@ class PostsController < ApplicationController
   end
 
   # POST /posts or /posts.json
+  # def create
+  #   @post = Post.new(post_params)
+  #   @users = User.all
+  #     if @post.save
+  #        redirect_to posts_url, notice: "Post was successfully created." 
+  #     else
+  #       flash[:error] = @post.errors.full_messages
+  #       render :new
+  #     end
+  # end
+
   def create
     @post = Post.new(post_params)
 
