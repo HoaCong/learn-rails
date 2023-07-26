@@ -6,6 +6,7 @@ default: &default
   host: localhost
   username: postgres
   password: postgres
+
 development:
   <<: *default
   database: learn_rails_development
